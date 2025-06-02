@@ -8,7 +8,7 @@ const API = import.meta.env.VITE_API;
 const ProtectedRoute = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-
+  //addted protected route
   useEffect(() => {
     const verifyUser = async () => {
       try {
