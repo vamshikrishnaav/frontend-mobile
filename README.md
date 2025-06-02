@@ -1,12 +1,80 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🍕 Restaurant-customer-app
 
-Currently, two official plugins are available:
+A modern, mobile-optimized food ordering web app built with React. Customers can browse through food categories, adjust item quantities, and place orders after logging in or registering. This project features clean UI components, category filtering, and dynamic cart management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Intuitive UI** – Clean, responsive, and mobile-friendly interface.
+2. **Category Tabs** – Easily filter menu items by categories like Pizza, Burger, etc.
+3. **Search Functionality** – Quickly locate your favorite food item.
+4. **Cart Management** – Add/remove items with quantity control.
+5. **Authentication** – Register and login to place orders.
+6. **Routing** – Seamless navigation using React Router.
+7. **Reusable Components** – Modular React structure with CSS-based styling.
+
+---
+
+
+## ## 📁 Project Structure
+
+estaurant-customer-app/
+├── components/
+│ ├── Header.jsx
+│ ├── CategoryTabs.jsx
+│ ├── SearchBar.jsx
+│ ├── PizzaCard.jsx
+│ ├── PizzaList.jsx
+├── pages/
+│ ├── HomePage.jsx
+│ ├── Order.jsx
+│ ├── LoginPage.jsx
+│ └── Registration.jsx
+├── App.jsx
+├── App.css
+├── index.js
+└── README.md## 🧩 Component Summary
+
+| Component        | Description                                                   |
+|------------------|---------------------------------------------------------------|
+| `Header.jsx`     | Displays greeting and prompt for user to place orders.        |
+| `SearchBar.jsx`  | Input field to search menu items.                             |
+| `CategoryTabs.jsx`| Shows food categories (Pizza, Burger, etc.)                  |
+| `PizzaCard.jsx`  | Individual food item with image, price, and quantity buttons. |
+| `PizzaList.jsx`  | Displays a list/grid of `PizzaCard` components.               |
+
+---
+
+## 🔧 Setup & Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/vamshikrishnaav/frontend-mobile
+   cd frontend-mobile
+
+
+## Dependencies
+npm install
+
+npm run dev
+
+Visit http://localhost:5173/ (if using Vite) or check your terminal for the local server URL.
+
+🛠️ Tech Stack
+
+Frontend: React.js, JSX
+
+Styling: Plain CSS (Responsive design)
+
+Routing: React Router DOM
+
+State Management: useState
+
+Authentication Pages: Login & Registration components
+
+## Demo credentials.
+phone:8969676629
+password:password
+
