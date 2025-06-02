@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
-import "../pages/Registration.css"; // You can rename this to Registration.css if needed
+import "../pages/Registration.css"; 
 const API = import.meta.env.VITE_API;
 
 export default function RegistrationPage() {
@@ -17,7 +17,7 @@ export default function RegistrationPage() {
       return alert("Please fill all fields");
     }
 
-    // You can store password securely on server/backend; not advisable in frontend state
+    
     const user = await axios.post(
       `${API}/api/v1/user/sign-up`,
       {
@@ -33,7 +33,7 @@ export default function RegistrationPage() {
 
     console.log(user);
 
-    // ✅ Navigate to Login Page after registration
+    
     navigate("/login");
   };
 
