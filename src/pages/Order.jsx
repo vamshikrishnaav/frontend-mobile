@@ -10,6 +10,7 @@ export default function Order({ cart, updateCart, userDetails }) {
   const [orderType, setOrderType] = useState("Dine In");
   const [showModal, setShowModal] = useState(false);
   const [showToast, setShowToast] = useState(false);
+  const [table, setTable] = useState(0);
 
   const navigate = useNavigate();
 
@@ -32,7 +33,7 @@ export default function Order({ cart, updateCart, userDetails }) {
 
   const handleSwipeOrder = async () => {
     let order = {
-      tableNumber: 1,
+      tableNumber: table,
       orderItem: {},
       orderType: orderType === "Dine In" ? "dineIn" : "takeAway",
     };
@@ -107,7 +108,12 @@ export default function Order({ cart, updateCart, userDetails }) {
       >
         Add cooking instructions (optional)
       </button>
-
+      <div>
+        <input
+          placeholder="Enter table number"
+          onChange={(e) => setTable(e.target.value)}
+        ></input>
+      </div>
       <div className="order-type">
         {["Dine In", "Take Away"].map((type) => (
           <button

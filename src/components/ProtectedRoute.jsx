@@ -16,7 +16,7 @@ const ProtectedRoute = ({ children }) => {
           withCredentials: true,
         });
 
-        if (res.data && res.data.role === "admin") {
+        if (res.data && res.data.role === "user") {
           setIsAuthenticated(true);
         } else {
           setIsAuthenticated(false);

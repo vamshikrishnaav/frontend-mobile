@@ -29,9 +29,10 @@ export default function LoginPage() {
       }
     );
 
-    console.log(data);
+    console.log(data.success);
 
     if (data.success) {
+      console.log("hello");
       navigate("/");
     } else {
       alert("number/password is wrong please try again");
