@@ -15,7 +15,7 @@ export default function LoginPage() {
     if (!number || !password) {
       return alert("Please fill all fields");
     }
-    // Simulate successful login
+  
     alert("Login successful!");
 
     const { data } = await axios.post(

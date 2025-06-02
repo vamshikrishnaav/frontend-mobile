@@ -8,7 +8,7 @@ import {
 import HomePage from "./pages/HomePage";
 import Order from "./pages/Order";
 import RegistrationPage from "./pages/Registration.jsx";
-import LoginPage from "./pages/LoginPage.jsx"; // ✅ Import LoginPage
+import LoginPage from "./pages/LoginPage.jsx"; 
 import "./App.css";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import { useEffect } from "react";
@@ -36,7 +36,6 @@ export default function App() {
           element={<RegistrationPage setUserDetails={setUserDetails} />}
         />
         <Route path="/login" element={<LoginPage />} />{" "}
-        {/* ✅ Login route added */}
         <Route
           path="/"
           element={
