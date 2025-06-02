@@ -153,7 +153,7 @@ export default function Order({ cart, updateCart, userDetails }) {
         <p>
           {userDetails?.name}, {userDetails?.phone}
         </p>
-        <p>📍 {userDetails?.address}</p>
+        <p>📍 {userDetails}</p>
         <p>
           ⏱️ Delivery in <strong>42 mins</strong>
         </p>
