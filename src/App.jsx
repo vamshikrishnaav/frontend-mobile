@@ -8,16 +8,17 @@ import {
 import HomePage from "./pages/HomePage";
 import Order from "./pages/Order";
 import RegistrationPage from "./pages/Registration.jsx";
-import LoginPage from "./pages/LoginPage.jsx"; 
+import LoginPage from "./pages/LoginPage.jsx";
 import "./App.css";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
-import { useEffect } from "react";
+
+const API = import.meta.env.VITE_API;
 
 export default function App() {
   const [cart, setCart] = useState({});
-  const [userDetails, setUserDetails] = useState(null);
-
-  useEffect(() => {}, []);
+  const [userDetails, setUserDetails] = useState(
+    "1021, 15th cross, 2nd floor, kumarswamy layout, bengaluru"
+  );
 
   const updateCart = (id, delta) => {
     setCart((prev) => {
